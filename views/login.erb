@@ -67,18 +67,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>shortlink app</h1>
+        <h1>Enter the password</h1>
         <form method="post">
-            <input type="text" value="<%= h(params[:url]) %>" name="url" id="url" placeholder="url"/>
-            <input type="text" value="<%= h(params[:shortcode]) %>" name="shortcode" id="shortcode" placeholder="optional shortcode" />
-            <input type="submit" value="shorten" id="submit" />
+            <input type="text" value="<%= h(params[:password]) %>" name="password" id="password" />
+            <input type="submit" value="enter" id="submit" />
         </form>
-        <div class="clear"></div>
-        <% if @shortcode %>
-        <div class="result">
-            Your shortened URL is:
-            <a href="<%= @shortened_url %>"><%= @shortened_url %></a>
-        </div>
-        <% end %>
     </div>
 </body>

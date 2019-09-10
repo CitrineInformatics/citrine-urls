@@ -2,7 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     newrelic_rpm (3.14.1.311)
-    rack (1.6.4)
+    rack (1.6.11)
     rack-protection (1.5.3)
       rack
     redis (3.2.2)
